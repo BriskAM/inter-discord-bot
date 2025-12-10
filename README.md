@@ -62,19 +62,26 @@ cp .env.example .env
 
 ### 3. Set Up Playlists
 
-Create playlist folders in the `playlists` directory:
+You can manually add files or use the included downloader script:
+
+```bash
+# Run the interactive downloader (requires yt-dlp on host)
+python3 scripts/download_playlist.py
+```
+
+This script will:
+1. Ask for a YouTube/Spotify playlist URL
+2. Ask for a folder name (e.g., `interstellar`)
+3. Download the tracks
+4. Automatically rename them to Leetspeak format (e.g., `01_Dr34m1ng.mp3`)
+
+Alternatively, creates folders manually:
 
 ```
 playlists/
 ├── chill-vibes/
 │   ├── track1.mp3
-│   ├── track2.mp3
-│   └── track3.mp3
-├── workout/
-│   ├── song1.mp3
-│   └── song2.mp3
-└── study-music/
-    └── ambient1.mp3
+...
 ```
 
 Supported audio formats: `.mp3`, `.m4a`, `.wav`, `.ogg`, `.flac`, `.opus`, `.webm`

@@ -40,8 +40,9 @@ Thumbs.db
 # Logs
 *.log
 
-# uv
-.uv/
-uv.lock
+# Playlists
+playlists/*
+!playlists/.gitkeep
+!playlists/example-playlist/
 
 .DS_Store

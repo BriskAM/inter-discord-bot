@@ -33,8 +33,11 @@ Thumbs.db
 # Logs
 *.log
 
-# Playlists (don't include in image, use volumes)
-playlists/
+# Playlists
+playlists/*
+!playlists/.gitignore
+!playlists/README.md
+!playlists/**/README.md
 
 # Docker
 docker-compose.override.yml
