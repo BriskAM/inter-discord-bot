@@ -1,0 +1,18 @@
+[project]
+name = "inter-discord-bot"
+version = "0.1.0"
+description = "A Discord music bot that plays audio from local playlists"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "discord.py[voice]>=2.3.0",
+    "PyNaCl>=1.5.0",
+    "python-dotenv>=1.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = []
